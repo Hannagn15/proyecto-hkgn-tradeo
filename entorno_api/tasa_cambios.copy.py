@@ -13,6 +13,8 @@ for item in lista_general:
     if item["type_is_crypto"] == 1:
         lista_criptos.append(item['asset_id'])
 
+print("monedas digitales; ", len(lista_criptos))
+print("monedas no digitales; ", (len(lista_general) - len(lista_criptos)))
 
 moneda_cripto = input("escribe una moneda cripto conocida:").upper()
 
